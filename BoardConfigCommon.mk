@@ -199,6 +199,9 @@ BACKLIGHT_PATH := /sys/devices/13900000.dsim/backlight/panel/brightness
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/etc/fstab.samsungexynos7420
 
+# Releasetools - for resizing system filesystem
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/universal7420-common/releasetools
+
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 
