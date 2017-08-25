@@ -172,6 +172,10 @@ PRODUCT_PACKAGES += \
     libMcClient \
     libMcRegistry
 
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # NFC
 PRODUCT_PACKAGES += \
     libnfc-nci \
