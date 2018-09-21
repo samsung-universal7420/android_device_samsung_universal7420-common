@@ -138,3 +138,6 @@ WIFI_BAND                        := 802_11_ABG
 
 # MACLOADER
 BOARD_HAVE_SAMSUNG_WIFI          := true
+
+# Backlight
+BACKLIGHT_PATH := /sys/devices/13900000.dsim/backlight/panel/brightness
