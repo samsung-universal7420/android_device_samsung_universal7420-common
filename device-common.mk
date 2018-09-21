@@ -56,6 +56,16 @@ PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-impl \
     android.hardware.configstore@1.0-service
 
+# Graphics
+PRODUCT_PACKAGES += \
+    gralloc.exynos5 \
+    hwcomposer.exynos5 \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    libhwc2on1adapter
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
