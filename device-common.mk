@@ -26,3 +26,7 @@ PRODUCT_AAPT_CONFIG := xlarge
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 # A list of dpis to select prebuilt apk, in precedence order.
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
+
+# call Samsung LSI board support package
+$(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
+$(call inherit-product, hardware/samsung_slsi-cm/exynos7420/exynos7420.mk)
