@@ -1,0 +1,82 @@
+# Audio
+af.fast_track_multiplier=1
+audio_hal.force_voice_config=wide
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=15
+
+# Board
+ro.arch=exynos7420
+ro.chipname=exynos7420
+
+# Camera
+vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.orca,com.instagram.android,com.snapchat.android
+vendor.camera.hal1.packagelist=com.viber.voip,org.telegram.messenger,org.thunderdog.challegram
+
+# Dalvik
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.image-dex2oat-filter=speed
+
+# Factory Reset Protection
+ro.frp.pst=/dev/block/platform/15570000.ufs/by-name/PERSISTENT
+
+# Graphics
+debug.hwui.use_buffer_age=false
+ro.opengles.version=196610
+sys.use_fifo_ui=1
+
+# HWC
+debug.hwc.max_hw_overlays=6
+debug.sf.latch_unsignaled=1
+
+# Miracast (Wireless Display)
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+wlan.wfd.hdcp=disable
+
+# Network
+# Define default initial receive window size in segments.
+net.tcp.default_init_rwnd=60
+
+# NFC
+ro.nfc.fw_dl_on_boot=false
+ro.nfc.sec_hal=true
+
+# OMX
+media.sf.omx-plugin=libffmpeg_omx.so,libsomxcore.so
+persist.media.treble_omx=false
+
+# Power
+sys.power.profiles=true
+
+# Read single/dual-SIM properties
+import /efs/factory.prop
+
+# Ril
+persist.data.netmgrd.qos.enable=false
+persist.radio.add_power_save=1
+persist.radio.apm_sim_not_pwdn=1
+rild.libpath=/system/vendor/lib64/libsec-ril.so
+ro.ril.gprsclass=10
+ro.ril.hsxpa=1
+ro.ril.telephony.mqanelements=6
+ro.telephony.ril.config=simactivation
+ro.use_data_netmgrd=false
+
+# Storage
+ro.sys.sdcardfs=1
+ro.sys.sdcardfs.legacy-mounting=1
+
+# USB
+persist.sys.usb.config=mtp
+sys.usb.ffs.aio_compat=1
+
+# Wifi
+net.tethering.noprovisioning=true
+wifi.direct.interface=p2p-dev-wlan0
+wifi.interface=wlan0
