@@ -141,3 +141,6 @@ BOARD_HAVE_SAMSUNG_WIFI          := true
 
 # Backlight
 BACKLIGHT_PATH := /sys/devices/13900000.dsim/backlight/panel/brightness
+
+# Seccomp filters
+BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
