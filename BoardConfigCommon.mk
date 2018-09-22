@@ -142,5 +142,8 @@ BOARD_HAVE_SAMSUNG_WIFI          := true
 # Backlight
 BACKLIGHT_PATH := /sys/devices/13900000.dsim/backlight/panel/brightness
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/etc/fstab.samsungexynos7420
+
 # Seccomp filters
 BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
