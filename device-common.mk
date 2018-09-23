@@ -71,6 +71,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     dtbhtoolExynos
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
+
 # Graphics
 PRODUCT_PACKAGES += \
     gralloc.exynos5 \
