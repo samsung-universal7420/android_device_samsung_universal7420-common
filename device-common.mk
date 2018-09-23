@@ -82,6 +82,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl
 
+# GPS config files
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps/gps.xml:system/etc/gps.xml \
+    $(LOCAL_PATH)/configs/gps/lhd.conf:system/etc/lhd.conf
+
 # Graphics
 PRODUCT_PACKAGES += \
     gralloc.exynos5 \
