@@ -179,6 +179,19 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service \
     android.hardware.power@1.0-impl
 
+# Radio
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    libsecril-client \
+    modemloader \
+    libxml2 \
+    rild \
+    libril \
+    libreference-ril \
+    libsecril-client-sap \
+    android.hardware.radio@1.0 \
+    android.hardware.radio.deprecated@1.0
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.samsungexynos7420 \

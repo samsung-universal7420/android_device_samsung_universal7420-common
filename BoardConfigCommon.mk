@@ -182,6 +182,9 @@ BACKLIGHT_PATH := /sys/devices/13900000.dsim/backlight/panel/brightness
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/etc/fstab.samsungexynos7420
 
+# RIL
+BOARD_PROVIDES_LIBRIL := true
+
 # Seccomp filters
 BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
 
