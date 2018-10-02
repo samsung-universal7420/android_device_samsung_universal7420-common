@@ -215,3 +215,6 @@ BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
 # Shims: fingerprint
 TARGET_LD_SHIM_LIBS := \
     /system/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
