@@ -227,8 +227,8 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-impl
 
 # call Samsung LSI board support package
-$(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
-$(call inherit-product, hardware/samsung_slsi-cm/exynos7420/exynos7420.mk)
+$(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
+$(call inherit-product, hardware/samsung_slsi/exynos7420/exynos7420.mk)
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal7420-common/universal7420-common-vendor.mk)
