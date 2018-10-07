@@ -14,7 +14,6 @@ on early-init
 
 on init
     start watchdogd
-    mkdir /preload 0771 system system
 
     # See storage config details at http://source.android.com/tech/storage/
     mkdir /mnt/shell/emulated 0700 shell shell
@@ -419,18 +418,6 @@ on boot
 on fs
     mount_all /fstab.samsungexynos7420
     setprop ro.crypto.fuse_sdcard true
-
-    #For Absolute Persistence Partition
-    mkdir /persdata 0755 system system
-    mkdir /persdata/absolute 0750 system system
-
-    wait /dev/block/platform/15570000.ufs/by-name/PERSDATA
-    mount ext4 /dev/block/platform/15570000.ufs/by-name/PERSDATA /persdata/absolute nosuid nodev noatime noauto_da_alloc,discard,journal_async_commit,errors=panic
-
-    chown system system /persdata
-    chmod 0755 /persdata
-    chown system system /persdata/absolute
-    chmod 0750 /persdata/absolute
 
 # Permissions for TouchScreen
     chown system radio /sys/class/sec/tsp/cmd
