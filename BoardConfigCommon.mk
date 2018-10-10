@@ -165,6 +165,9 @@ WIFI_BAND                        := 802_11_ABG
 # MACLOADER
 BOARD_HAVE_SAMSUNG_WIFI          := true
 
+# Network Routing
+TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
+
 # Bluetooth
 BOARD_CUSTOM_BT_CONFIG := $(LOCAL_PATH)/bluetooth/libbt_vndcfg.txt
 BOARD_HAVE_BLUETOOTH := true
