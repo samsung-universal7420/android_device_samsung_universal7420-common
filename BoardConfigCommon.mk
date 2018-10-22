@@ -80,6 +80,9 @@ TARGET_SYSTEM_PROP += device/samsung/universal7420-common/system.prop
 # Device Tree
 BOARD_USES_DT := true
 
+# Graphics
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+
 # Screen casting
 BOARD_USES_WFD := true
 
