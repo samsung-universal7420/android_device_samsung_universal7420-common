@@ -260,6 +260,10 @@
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
     <integer name="config_safe_media_volume_index">17</integer>
 
+    <!-- If device supports corner radius on windows.
+         This should be turned off on low-end devices to improve animation performance. -->
+    <bool name="config_supportsRoundedCornersOnWindows">false</bool>
+
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
          If no value is found for the rat-name in use, the system default will be applied.
