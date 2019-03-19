@@ -201,6 +201,10 @@ on post-fs
     mkdir /data/misc/vpnclientd 0770 system system
 
 on post-fs-data
+    # avoid USB crash
+    setprop persist.adb.nonblocking_ffs 0
+    setprop ro.adb.nonblocking_ffs 0
+
 # [ SEC_SELINUX_PORTING_COMMON
     # Reload SE Android Policy
     setprop selinux.reload_policy 1
