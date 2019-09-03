@@ -72,6 +72,9 @@ TARGET_KERNEL_SOURCE := kernel/samsung/universal7420
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# Exclude AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
 
