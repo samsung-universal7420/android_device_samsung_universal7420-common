@@ -207,3 +207,7 @@ BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/universal7420-common/sepolicy 
 BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
+
+# Shims: fingerprint
+TARGET_LD_SHIM_LIBS := \
+    /system/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so
