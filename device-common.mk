@@ -83,6 +83,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    fingerprint.exynos5 \
+    android.hardware.biometrics.fingerprint@2.1-impl \
+    android.hardware.biometrics.fingerprint@2.1-service
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl

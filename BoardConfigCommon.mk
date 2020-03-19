@@ -184,6 +184,9 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_HAVE_SAMSUNG_BLUETOOTH := true
 
+# Fingerprint
+TARGET_SEC_FP_HAL_VARIANT := bauth
+
 # Lineage Hardware
 JAVA_SOURCE_OVERLAYS := \
     org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
