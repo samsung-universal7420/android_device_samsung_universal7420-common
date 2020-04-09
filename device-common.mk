@@ -164,6 +164,12 @@ PRODUCT_PACKAGES += \
     memtrack.exynos5 \
     android.hardware.memtrack@1.0-impl
 
+# Mobicore
+PRODUCT_PACKAGES += \
+    mcDriverDaemon \
+    libMcClient \
+    libMcRegistry
+
 # NFC
 PRODUCT_PACKAGES += \
     libnfc-nci \
