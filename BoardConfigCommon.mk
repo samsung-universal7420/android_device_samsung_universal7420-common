@@ -216,5 +216,10 @@ BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
 TARGET_LD_SHIM_LIBS := \
     /system/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so
 
+# Shims: camera
+TARGET_LD_SHIM_LIBS += \
+    /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \
+    /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
