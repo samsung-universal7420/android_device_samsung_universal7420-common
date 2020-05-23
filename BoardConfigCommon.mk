@@ -226,5 +226,9 @@ TARGET_LD_SHIM_LIBS += \
     /system/lib64/libstagefright.so|/system/lib64/libstagefright_shim.so \
     /system/lib/libstagefright.so|/system/lib/libstagefright_shim.so
 
+# Shims: mediaserver
+TARGET_LD_SHIM_LIBS += \
+    /system/bin/mediaserver|/system/lib/libstagefright_shim.so
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
