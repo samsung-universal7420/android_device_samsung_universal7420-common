@@ -53,3 +53,6 @@ type sysfs_sswap, sysfs_type, fs_type, mlstrustedobject;
 
 # mobicore
 type mobicore_data_file, file_type, data_file_type, core_data_file_type;
+
+### data types
+type display_vendor_data_file, file_type, data_file_type;
