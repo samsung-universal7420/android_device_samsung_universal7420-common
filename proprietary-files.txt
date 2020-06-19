@@ -113,8 +113,8 @@ lib64/libegis_fp_normal_sensor_test.so
 lib64/libsynaFpSensorTestNwd.so
 
 # GPS
-bin/gps.cer
-bin/gpsd
+bin/gps.cer:vendor/bin/gps.cer
+bin/gpsd:vendor/bin/gpsd
 lib/libfloatingfeature.so
 lib/libwrappergps.so
 lib64/hw/gps.default.so
@@ -165,43 +165,43 @@ vendor/lib64/libsecure_storage.so
 vendor/lib64/libsecure_storage_jni.so
 
 # Mobicore
-bin/mcDriverDaemon
+bin/mcDriverDaemon:vendor/bin/mcDriverDaemon
 lib/libMcClient.so
 lib/libMcRegistry.so
 lib64/libMcClient.so
 lib64/libMcRegistry.so
-app/FFFFFFFF000000000000000000000001.drbin
-app/mcRegistry/00060308060501020000000000000000.tlbin
-app/mcRegistry/07010000000000000000000000000000.tlbin
-app/mcRegistry/07060000000000000000000000000000.tlbin
-app/mcRegistry/08130000000000000000000000000000.tlbin
-app/mcRegistry/ffffffff000000000000000000000004.tlbin
-app/mcRegistry/ffffffff000000000000000000000005.tlbin
-app/mcRegistry/ffffffff00000000000000000000000a.tlbin
-app/mcRegistry/ffffffff00000000000000000000000b.tlbin
-app/mcRegistry/ffffffff00000000000000000000000c.tlbin
-app/mcRegistry/ffffffff00000000000000000000000d.tlbin
-app/mcRegistry/ffffffff00000000000000000000000e.tlbin
-app/mcRegistry/ffffffff00000000000000000000000f.tlbin
-app/mcRegistry/ffffffff000000000000000000000012.tlbin
-app/mcRegistry/ffffffff000000000000000000000013.tlbin
-app/mcRegistry/ffffffff000000000000000000000014.tlbin
-app/mcRegistry/ffffffff000000000000000000000016.tlbin
-app/mcRegistry/ffffffff000000000000000000000017.tlbin
-app/mcRegistry/ffffffff000000000000000000000019.tlbin
-app/mcRegistry/ffffffff00000000000000000000001f.tlbin
-app/mcRegistry/ffffffff000000000000000000000021.tlbin
-app/mcRegistry/ffffffff000000000000000000000038.tlbin
-app/mcRegistry/ffffffff00000000000000000000003e.tlbin
-app/mcRegistry/ffffffff000000000000000000000041.tlbin
-app/mcRegistry/ffffffffd00000000000000000000004.tlbin
-app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
-app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
-app/mcRegistry/ffffffffd00000000000000000000014.tlbin
-app/mcRegistry/ffffffffd00000000000000000000016.tlbin
-app/mcRegistry/ffffffffd00000000000000000000017.tlbin
-app/mcRegistry/fffffffff0000000000000000000001b.tlbin
-app/mcRegistry/fffffffff0000000000000000000001e.tlbin
+app/FFFFFFFF000000000000000000000001.drbin:vendor/app/FFFFFFFF000000000000000000000001.drbin
+app/mcRegistry/00060308060501020000000000000000.tlbin:vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
+app/mcRegistry/07010000000000000000000000000000.tlbin:vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
+app/mcRegistry/07060000000000000000000000000000.tlbin:vendor/app/mcRegistry/07060000000000000000000000000000.tlbin
+app/mcRegistry/08130000000000000000000000000000.tlbin:vendor/app/mcRegistry/08130000000000000000000000000000.tlbin
+app/mcRegistry/ffffffff000000000000000000000004.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000004.tlbin
+app/mcRegistry/ffffffff000000000000000000000005.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000005.tlbin
+app/mcRegistry/ffffffff00000000000000000000000a.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000a.tlbin
+app/mcRegistry/ffffffff00000000000000000000000b.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000b.tlbin
+app/mcRegistry/ffffffff00000000000000000000000c.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000c.tlbin
+app/mcRegistry/ffffffff00000000000000000000000d.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000d.tlbin
+app/mcRegistry/ffffffff00000000000000000000000e.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000e.tlbin
+app/mcRegistry/ffffffff00000000000000000000000f.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000f.tlbin
+app/mcRegistry/ffffffff000000000000000000000012.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000012.tlbin
+app/mcRegistry/ffffffff000000000000000000000013.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000013.tlbin
+app/mcRegistry/ffffffff000000000000000000000014.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000014.tlbin
+app/mcRegistry/ffffffff000000000000000000000016.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000016.tlbin
+app/mcRegistry/ffffffff000000000000000000000017.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000017.tlbin
+app/mcRegistry/ffffffff000000000000000000000019.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000019.tlbin
+app/mcRegistry/ffffffff00000000000000000000001f.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000001f.tlbin
+app/mcRegistry/ffffffff000000000000000000000021.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000021.tlbin
+app/mcRegistry/ffffffff000000000000000000000038.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000038.tlbin
+app/mcRegistry/ffffffff00000000000000000000003e.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000003e.tlbin
+app/mcRegistry/ffffffff000000000000000000000041.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000041.tlbin
+app/mcRegistry/ffffffffd00000000000000000000004.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000004.tlbin
+app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:vendor/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
+app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:vendor/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
+app/mcRegistry/ffffffffd00000000000000000000014.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000014.tlbin
+app/mcRegistry/ffffffffd00000000000000000000016.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin
+app/mcRegistry/ffffffffd00000000000000000000017.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000017.tlbin
+app/mcRegistry/fffffffff0000000000000000000001b.tlbin:vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin
+app/mcRegistry/fffffffff0000000000000000000001e.tlbin:vendor/app/mcRegistry/fffffffff0000000000000000000001e.tlbin
 
 # NFC
 etc/nfc/THL/sec_s3fwrn5p_rfreg.bin
@@ -373,7 +373,7 @@ lib/libprotobuf-cpp-shim.so
 lib64/libprotobuf-cpp-shim.so
 
 # RIL
-bin/cbd
+bin/cbd:/vendor/bin/cbd
 lib/libuniplugin.so
 lib64/libuniplugin.so
 vendor/bin/hw/rild
@@ -390,7 +390,7 @@ vendor/lib64/libsec-ril.so
 
 # Sensors
 bin/bcm_sensorhub_a2.patch
-bin/lhd
+bin/lhd:vendor/bin/lhd
 lib/hw/sensorhubs.universal7420.so
 lib/hw/sensors.universal7420.so
 lib/libsensorlistener.so
@@ -404,7 +404,7 @@ lib/libsxqk.so
 lib64/libsxqk.so
 
 # sswap
-bin/sswap
+bin/sswap:vendor/bin/sswap
 
 # WiFi
 vendor/etc/wifi/.clminfo

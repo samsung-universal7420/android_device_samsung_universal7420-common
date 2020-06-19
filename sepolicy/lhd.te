@@ -1,7 +1,7 @@
 #### lhd
 #
 type lhd, domain;
-type lhd_exec, exec_type, file_type;
+type lhd_exec, exec_type, file_type, vendor_file_type;
 
 allow lhd bbd_device:chr_file { read write getattr open ioctl };
 
