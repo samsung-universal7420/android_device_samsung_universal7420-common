@@ -60,6 +60,10 @@ on post-fs-data
     chmod 0660 /efs/wifi/.mac.info
     start macloader
 
+    # Set permissions for firmware path control
+    chown wifi wifi /sys/module/dhd/parameters/firmware_path
+    chmod 0660 /sys/module/dhd/parameters/firmware_path
+
 on boot
     setprop wifi.interface wlan0
 
@@ -95,6 +99,11 @@ service wlandutservice /system/bin/wlandutservice
 service macloader /system/bin/macloader
     class main
     disabled
+    oneshot
+
+# Run deferred initcalls of builtin kernel modules (bcmdhd)
+service wifiloader /vendor/bin/wifiloader
+    class main
     oneshot
 
 on property:init.svc.macloader=stopped

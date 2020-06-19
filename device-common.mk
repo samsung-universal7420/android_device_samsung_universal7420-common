@@ -218,6 +218,7 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     macloader \
+    wifiloader \
     hostapd \
     wificond \
     wifilogd \
