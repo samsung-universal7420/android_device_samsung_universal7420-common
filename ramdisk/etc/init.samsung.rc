@@ -1,6 +1,4 @@
 on init
-    ffu
-
 # [ SEC_SELINUX_PORTING_COMMON
     # for audit message
     chown system system /proc/avc_msg
@@ -222,7 +220,6 @@ on post-fs-data
     chown system system /efs/drm/h2k
 
     # icd
-    check_icd
     chown system system /dev/icd
     chmod 0644 /dev/icd
     chown system system /dev/icdr
@@ -804,9 +801,6 @@ service auditd /system/bin/auditd -k
     disabled
     oneshot
 
-on property:selinux.sec.restorecon=1
-    restorecon_data_force /data
-
 # Reload SE Android Policy for MDM
 on property:persist.security.mdm.policy=1
     setprop selinux.reload_policy 1
@@ -817,26 +811,6 @@ service bootchecker /system/bin/bootchecker
     class late_start
     user system
     group system log
-    oneshot
-
-# [ Professional audio
-service apaservice /system/bin/apaservice
-    class main
-    user jack
-    group inet sdcard_rw sdcard_r media_rw shell
-
-service jackservice /system/bin/jackservice
-    class main
-    user jack
-    group audio inet shell
-# Professional audio ]
-
-# icd
-service icd /system/bin/icd
-    class main
-    user system
-    group system log
-    onrestart check_icd
     oneshot
 
 on property:init.svc.zygote=restarting
@@ -896,11 +870,6 @@ service iod /system/bin/iod
 
 on property:sys.boot_completed=1
     start iod
-
-# icd
-on property:init.svc.media=restarting
-    check_icd
-    start icd
 
 # otp
 service otp /system/bin/otp_server

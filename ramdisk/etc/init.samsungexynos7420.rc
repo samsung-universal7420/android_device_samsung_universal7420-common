@@ -113,7 +113,6 @@ on post-fs-data
     chown system audio /sys/class/earsmart/control/extra_volume
     chown system audio /sys/class/earsmart/control/always_stream_fs_on
 
-
 # permission for CHARGING
     chown system radio /sys/class/power_supply/battery/batt_discharging_check
     chown system radio /sys/class/power_supply/battery/batt_discharging_check_adc
@@ -707,11 +706,6 @@ on fs
     #chown system system /sys/class/sec/tsp/brane
     #chmod 0660 /sys/class/sec/tsp/brane
 
-# emergency firmware update
-on firmware
-    mount_all /fstab.samsungexynos7420.fwup
-    class_start firmware_update
-
 # ARGOSD
 service argos-daemon /system/bin/argosd
     class main
@@ -758,15 +752,6 @@ on property:ro.bootmode=charger
 
 on property:ro.bootmode=charger
     class_start sec-charger
-
-# Emergency Firmware Update
-service fwup /sbin/ffu -a
-    class firmware_update
-    user root
-    group root
-    seclabel u:r:ffu:s0
-    critical
-    oneshot
 
 # SecEDS
 
